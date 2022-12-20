@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+body{
+    font-family: 'Hind', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#bgd  #bgdVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+#container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+#container #input, #weather, #usersection{
+    border-radius: 10px;
+    margin: auto;
+    width: 60%;
+    height: 250px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+#container #zip , #container #userinput{
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px ;
+    position: relative;
+    top: 40px;
+    background-color: rgba(0, 0, 0, 0.342);
+    color: wheat;
+    text-align: center;
+    transition: 0.4s;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+#container #zip:focus , #container #userinput:focus{
+    background-color: rgba(0, 0, 0, 0.616);
+    box-shadow: 0 0 50px 0 black;
+}
+#container #zip::placeholder,
+#container #userinput::placeholder{
+    color: wheat;
+}
+#container #zip{
+    width: 40%;
+    height: 60%;
+    font-size: 1em;
+}
+#container #userinput{
+    font-size: 1.4em;
+    width: 70%;
+    height: 40%;
+    padding: 0 30px;
+}
+#container 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button{
+    appearance: none;
+}
+#container button{
+    position: relative;
+    top: 25px;
+    background-color: rgba(210, 105, 30, 0.39);
+    color: wheat;
+    border: none;
+    transition: 0.4s;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+#container button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0 black;
+    background-color: rgba(210, 105, 30, 0.69);
+}
+#container button:active{
+    transform: scale(0.98);
+    box-shadow: none;
+    background-color: rgba(210, 105, 30, 0.89);
+}
+
+.error{
+    text-align: center;
+    color: rgba(255, 203, 182, 0.904);
+    font-size: 1em;
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+    opacity: 0.8;
+}
+
+#weather{
+    margin: auto;
+    text-align: center;
+    height: auto;
+    width: 70%;
+
+}
+#usersection{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: auto;
+}
+#usersection #user{
+    text-align: center;
+    display: block;
+    font-size: 1.2em;
+    color: rgb(255, 229, 180);
+}
+
+#temp, #date, #city{
+    font-size: 1.5em;
+    color: rgb(255, 229, 180);
+}
+#dateAndTemp{
+    display: flex;
+    justify-content: space-between;
+}
+
+#temp, #date{
+    margin-left: 90px;
+    margin-right: 90px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1779/1779940.png">
+    <title>Weather Journal App</title>
+</head>
+<body>
+    <div id="bgd">
+        <video id="bgdVideo" playbackRate="0.5"  muted autoplay loop>
+            <source src="https://joy1.videvo.net/videvo_files/video/free/2019-12/large_watermarked/190915_B_01_Timelapse Danang_05_preview.mp4" type="video/mp4"></source>
+        </video>
+    </div>
+    <div id="container">
+        <div id="input">
+            <form id="weather-form" action="#">
+                <input type="number" id="zip" title="zipCode" placeholder="Write City Zip Code">
+                <p id="error"></p>
+                <textarea type="text" id="userinput" placeholder="what do you feel today with current weather 😀" ></textarea>
+                <button type="submit">Check Weather</button>
+            </form>
+        </div>
+    </div>
+    <div id="usersection">
+        <span id="user"></span>
+    </div>
+    <div id="weather">
+        <div id="cityDiv">
+            <span id="city"></span>
+        </div>
+        <div id="dateAndTemp">
+            <span id="date"></span>
+        <span id="temp"></span>
+        </div>
+    </div>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
