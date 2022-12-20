@@ -30,3 +30,13 @@
      and the ui dynamically updated with the sent data
 
     -there is some error handlers added as UI form validation to control the user input
+
+## Installation
+
+    -first rename the [.env_sample](./.env_sample) to .env and use the file to assign the port
+     and the API key this important and with out this step the project won't work 
+    
+    -after assigning the environment variables use the command `npm start` to start the server
+     and open the browser on `http://localhost:your port here`
+
+    - the type the zip code in the right way to retrieve the weather data
