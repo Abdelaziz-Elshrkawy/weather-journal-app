@@ -35,8 +35,10 @@
 
     -first rename the [.env_sample](./.env_sample) to .env and use the file to assign the port
      and the API key this important and with out this step the project won't work 
+
+    -after assigning the environment variables use the command ```npm i``` to install the dependencies 
     
-    -after assigning the environment variables use the command `npm start` to start the server
+    -then use the command `npm start` to start the server
      and open the browser on `http://localhost:your port here`
 
     - the type the zip code in the right way to retrieve the weather data
