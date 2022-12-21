@@ -33,7 +33,7 @@
 
 ## Installation
 
-    -first rename the [.env_sample](./.env_sample) to .env and use the file to assign the port
+    -first rename the .env_sample to .env and use the file to assign the port
      and the API key this important and with out this step the project won't work 
 
     -after assigning the environment variables use the command ```npm i``` to install the dependencies 
