@@ -1,8 +1,8 @@
 # Weather Journal App
 
-![preview](preview/preview.png)
-
 ## This Project is Part of Udacity Professional Web Developer NanoDegree
+
+![preview](preview/preview.png)
 
 ## Technologies Used
 
