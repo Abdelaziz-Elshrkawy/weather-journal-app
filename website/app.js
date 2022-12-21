@@ -1,8 +1,8 @@
 //global variables
 const zip = document.getElementById('zip');
+const btn = document.getElementById('btn')
 const userinput = document.getElementById('userinput');
 const errorElement = document.getElementById('error');
-const weatherForm = document.getElementById('weather-form');
 const weatherDiv = document.getElementById('weather');
 const userDiv = document.getElementById('usersection')
 const baseUrl = 'https://api.openweathermap.org/data/2.5/weather?zip=';
@@ -73,7 +73,7 @@ const apiData = async (baseUrl, zipCode, apiKey) => {
 }
 
 
-weatherForm.addEventListener('submit', async () => {
+btn.addEventListener('click', async () => {
     let apiObj;
     let apiKey
     if (zip.value.length !== 0) {
