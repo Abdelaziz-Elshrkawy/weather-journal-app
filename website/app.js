@@ -18,6 +18,8 @@ try {
     document.getElementById('temp').innerHTML = `Actual Temperature: ${dataObj.temp}`;
     if (dataObj.userinput) {
         document.getElementById('user').innerHTML = `Your Feeling <br> ${dataObj.userinput}`
+    } else if (dataObj.userinput.length === 0) {
+        document.getElementById('user').innerHTML = ' '
     };
     document.getElementById('city').innerHTML = `it feels like (${dataObj.feelsLike}) in ${dataObj.city} now`;
     console.log(dataObj)
@@ -38,7 +40,7 @@ const postData = async (data,userinput) => {
     }
     const finalObj = {
         temp: temp,
-        date: `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`,
+        date: `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`,
         userinput: userValue,
         city: data.name,
         feelsLike: data.main.feels_like

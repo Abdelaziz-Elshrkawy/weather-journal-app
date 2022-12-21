@@ -36,17 +36,18 @@ app.post('/userinput', async (req, _res) => {
     projectData.userinput = data.userinput
     projectData.city = data.city
     projectData.feelsLike = `${data.feelsLike}°C`
+    console.log('\n /userinput')
     console.log(projectData)
-    console.log('\n userinput')
 })
 
 //data sending route
 app.get('/data', (_req, res) => {
     res.send(projectData)
+    console.log('\n /data')
     console.log(projectData)
 })
 
 // server listener
 app.listen(port, () => {
-    console.log(`Running on https://localhost:${port}`)
+    console.log(`Running on http://localhost:${port}`)
 })
