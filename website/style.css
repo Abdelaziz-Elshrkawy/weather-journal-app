@@ -144,4 +144,19 @@ input[type=number]::-webkit-outer-spin-button{
     #usersection #user, #city, #date, #temp{
         font-size: 1em;
     }
+    #container button{
+    transform: scale(1);
+    box-shadow: 0 0 0 0;
+    background-color: rgba(210, 105, 30, 0.836);
+    }
+    #container button:hover{
+    transform: scale(1);
+    box-shadow: 0 0 0 0;
+    background-color: rgba(210, 105, 30, 0.836);
+    }
+    #container button:active{
+    transform: scale(1);
+    box-shadow: 0 0 0 0;
+    background-color: rgba(210, 105, 30, 0.836);
+    }
 }
