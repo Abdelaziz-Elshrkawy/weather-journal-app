@@ -43,4 +43,4 @@ This project is part of [Professional Web Development NanoDegree](https://egfwd.
     -then use the command `npm start` to start the server
      and open the browser on `http://localhost:your port here`
 
-    - the type the zip code in the right way to retrieve the weather data
+    -then type the zip code in the right way to retrieve the weather data
