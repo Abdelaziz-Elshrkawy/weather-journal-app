@@ -22,7 +22,7 @@ try {
         document.getElementById('user').innerHTML = ' '
     };
     document.getElementById('city').innerHTML = `it feels like (${dataObj.feelsLike}) in ${dataObj.city} now`;
-    console.log(dataObj)
+    /* console.log(dataObj) */
 } catch (err) {
     console.log(err)
     }
@@ -61,7 +61,7 @@ const postData = async (data,userinput) => {
 //getting weather information from remote api
 const apiData = async (baseUrl, zipCode, apiKey) => {
     const url = `${baseUrl}${zipCode}&appid=${apiKey}&units=metric&lang=en`
-    console.log(url)
+    /* console.log(url) */
     const weather = await fetch(url);
     let data;
     try {
